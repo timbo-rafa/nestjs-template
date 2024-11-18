@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { Userlogin } from './app.controller';
 
 @Injectable()
 export class AppService {
@@ -6,7 +7,8 @@ export class AppService {
     return 'Hello World!';
   }
 
-  run() {
+  login(userLogin: Userlogin) {
+    
     return 1;
   }
 }
